@@ -13,6 +13,8 @@ const insertInt = () => {
         return;
       };
 
+      array.replaceAll(",", '');
+
       target = parseInt(target);
       
       array = array.substring(1, array.length-1).replaceAll('"', '').split(' ');
